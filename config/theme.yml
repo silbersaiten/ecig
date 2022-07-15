@@ -1,10 +1,10 @@
-name: classic
-display_name: Classic
+name: prestatheme
+display_name: Prestatheme
 version: 1.0.0
 author:
-  name: "PrestaShop Team"
-  email: "pub@prestashop.com"
-  url: "https://www.prestashop.com"
+  name: "Silbersaisten"
+  email: "info@silbersaiten.de"
+  url: "https://silbersaiten.de"
 
 meta:
   compatibility:
