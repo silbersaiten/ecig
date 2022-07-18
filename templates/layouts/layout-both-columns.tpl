@@ -56,7 +56,11 @@
           {include file='_partials/notifications.tpl'}
         {/block}
 
-        {hook h="displayWrapperTop"}
+        {if $page.page_name == 'index'}
+            {hook h="displayTopColumn"}
+            {hook h="displayHomePageWrapperTop"}
+        {/if}
+        
         <div class="container">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}

@@ -1,5 +1,4 @@
 #wrapper {
-  padding-top: 1.563rem;
   background: $gray-lighter;
 
   .banner {
@@ -44,4 +43,8 @@
       }
     }
   }
+}
+body:not(#index) #wrapper {
+  padding-top: 1.563rem;
+
 }

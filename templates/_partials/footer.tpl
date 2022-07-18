@@ -41,16 +41,16 @@
         {hook h='displayFooterAfter'}
       {/block}
     </div>
+  </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 copyright-row">
         <p class="text-sm-center">
           {block name='copyright_link'}
             <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+              {l s='%copyright% %year% %shop_name%' sprintf=['%shop_name%' => {$shop.name}, '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
             </a>
           {/block}
         </p>
       </div>
     </div>
-  </div>
 </div>
