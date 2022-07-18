@@ -33,16 +33,15 @@
     <ul class="carousel-inner" role="listbox" aria-label="{l s='Carousel container' d='Shop.Theme.Global'}">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
         <li class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}" role="option" aria-hidden="{if $smarty.foreach.homeslider.first}false{else}true{/if}">
-          {if !empty($slide.url)}<a href="{$slide.url}">{/if}
-            <figure>
-              <img src="{$slide.image_url}" alt="{$slide.legend|escape}" loading="lazy" width="1110" height="340">
-              {if $slide.title || $slide.description}
-                <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">{$slide.title}</h2>
-                  <div class="caption-description">{$slide.description nofilter}</div>
-                </figcaption>
-              {/if}
-            </figure>
+            {if !empty($slide.url)}<a href="{$slide.url}" class="sliderImage" style="background-image:url({$slide.image_url})">{/if}
+                {if $slide.title || $slide.description}
+                  <span class="container caption">
+                    <span class="col-md-6 text-left">
+                      <span class="display-1 text-uppercase">{$slide.title}</span>
+                      <span class="caption-description">{$slide.description nofilter}</span>
+                    </span>
+                  </span>
+                {/if}
           {if !empty($slide.url)}</a>{/if}
         </li>
       {/foreach}

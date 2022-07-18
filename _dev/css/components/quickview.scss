@@ -7,7 +7,9 @@
   .modal-content {
     width: 100%;
     min-height: 28.13rem;
-    background: $gray-light;
+    background: $white;
+    border:  0 none;
+    border-radius: 0;
   }
 
   .modal-header {
@@ -19,9 +21,6 @@
     min-height: 23.75rem;
   }
 
-  .modal-footer {
-    border-top: 1px solid rgba($gray, 0.3);
-  }
 
   .layer {
     display: none;

@@ -35,7 +35,7 @@
 
   .header-nav {
     max-height: 50px;
-    border-bottom: $gray-light 2px solid;
+    background-color: $brand-primary;
 
     #menu-icon {
       margin: 0 1rem;
@@ -145,6 +145,7 @@
 
   .header-top {
     padding: 1.25rem 0;
+    background-color: $brand-secondary;
 
     > .container {
       position: relative;
@@ -161,6 +162,9 @@
 
     .position-static {
       position: static;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     a[data-depth="0"] {

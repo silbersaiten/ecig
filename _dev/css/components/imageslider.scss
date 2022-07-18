@@ -1,6 +1,14 @@
 .carousel {
   margin-bottom: 1.5rem;
 
+  .sliderImage {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
   .direction {
     z-index: auto;
   }
@@ -19,11 +27,8 @@
     }
 
     .caption {
-      position: absolute;
-      bottom: 28px;
-      left: 90px;
-      max-width: 340px;
       color: $white;
+      padding: 1rem 0;
 
       .caption-description {
         p {
@@ -78,11 +83,11 @@
     }
 
     .icon-prev {
-      left: 1rem;
+      left: 3rem;
     }
 
     .icon-next {
-      right: 2rem;
+      right: 3rem;
     }
 
     &.left,
