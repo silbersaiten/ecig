@@ -1,13 +1,6 @@
 .block_newsletter {
   @include search-box();
-  float: inherit;
-  width: 100%;
-  max-width: 50rem;
-  margin: auto;
-  margin-bottom: 0.625rem;
-  clear: both;
-  font-size: $font-size-sm;
-  background: $white;
+
 
   #block-newsletter-label {
     font-size: 1.3125rem;
@@ -19,21 +12,7 @@
     .input-wrapper {
       overflow: hidden;
     }
-
-    .row {
-      .col-xs-12:last-of-type {
-        p {
-          font-size: 0.75rem;
-          color: $gray;
-        }
-      }
-
-      .col-xs-12:first-of-type {
-        .btn-primary:first-of-type {
-          margin-left: 0.5rem;
-        }
-      }
-    }
+  }
 
     input[type="email"] {
       width: 100%;
@@ -52,7 +31,7 @@
       box-shadow: none;
     }
   }
-}
+
 
 #footer {
   .block_newsletter {
@@ -63,6 +42,11 @@
     #block-newsletter-label {
       padding-top: 0;
     }
+
+    .input-wrapper input::placeholder {
+        color: $gray-darker
+    }
+
   }
 }
 

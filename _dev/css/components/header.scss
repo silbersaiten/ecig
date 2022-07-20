@@ -1,3 +1,11 @@
+body #header .header-nav {
+  a, 
+  button i,
+  button span {
+    color: white;
+  }
+}
+
 #header {
   position: relative;
   z-index: 999;
@@ -95,13 +103,14 @@
       }
     }
 
+
+
     .blockcart {
       height: 3rem;
       padding: 0.75rem;
       margin-left: 0.9375rem;
       text-align: center;
       white-space: nowrap;
-      background: $gray-light;
 
       a {
         color: $gray;

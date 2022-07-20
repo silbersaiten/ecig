@@ -23,19 +23,33 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
-  <div class="row">
-    <p id="block-newsletter-label" class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
-    <div class="col-md-7 col-xs-12">
+<div class="links block_newsletter col-md-3" id="blockEmailSubscription_{$hookName}">
+    <p class="h3 hidden-sm-down">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
+
+    <div class="title clearfix hidden-md-up" data-target="#newsletterblock" data-toggle="collapse">
+    <span class="h3">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}/span>
+    <span class="float-xs-right">
+      <span class="navbar-toggler collapse-icons">
+        <i class="material-icons add">&#xE313;</i>
+        <i class="material-icons remove">&#xE316;</i>
+      </span>
+    </span>
+    </div>
+
+    <div class="account-list collapse" id="newsletterblock"> 
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
-        <div class="row">
-          <div class="col-xs-12">
+          <div class="nl-inputs">
+            {*
             <input
               class="btn btn-primary float-xs-right hidden-xs-down"
               name="submitNewsletter"
               type="submit"
               value="{l s='Subscribe' d='Shop.Theme.Actions'}"
             >
+            *}
+            <button class="btn btn-primary float-xs-right hidden-sm-down" name="submitNewsletter" type="submit">
+              <i class="material-icons mail" aria-hidden="true">mail</i>
+            </button>
             <input
               class="btn btn-primary float-xs-right hidden-sm-up"
               name="submitNewsletter"
@@ -56,7 +70,7 @@
             <input type="hidden" name="action" value="0">
             <div class="clearfix"></div>
           </div>
-          <div class="col-xs-12">
+          <div class="small ">
               {if $conditions}
                 <p>{$conditions}</p>
               {/if}
@@ -69,9 +83,7 @@
               {if isset($id_module)}
                 {hook h='displayGDPRConsent' id_module=$id_module}
               {/if}
-          </div>
+          </form>
         </div>
-      </form>
     </div>
-  </div>
 </div>
