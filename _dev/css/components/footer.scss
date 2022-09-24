@@ -1,12 +1,17 @@
 #footer {
   padding-top: 2.5rem;
 
+  .nl-inputs {
+    position: relative;
+  }
+
   .copyright-row {
-    background-color: rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.1);
+    margin: 1rem 0 0;
+    padding: 1rem 0;
 
     p {
       margin: 0;
-      padding: .5rem 0;
     }
   } 
 
@@ -197,20 +202,24 @@
   background-image: url("../img/instagram.svg");
 }
 
+.footerBefore {
+  background-color: $black;
+}
+
 .footer-container {
   padding-top: $extra-large-space;
   overflow: hidden;
-  background-color: $brand-secondary;
-  border-top: 6px solid $brand-primary;
+  background-color: $white;
+  
 
   .h3,
   .h4,
   p.h3 a {
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    color: $white;
+    color: $black;
     text-transform: none;
-    font-weight: normal;
+    font-weight: 800;
   }
 
   li {
@@ -219,7 +228,7 @@
 
   li a {
     font-size: $base-font-size;
-    color: $gray;
+    color: $gray-second;
     cursor: pointer;
 
     &:hover {

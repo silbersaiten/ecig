@@ -22,13 +22,16 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<div class="container">
-  <div class="row">
-    {block name='hook_footer_before'}
-      {hook h='displayFooterBefore'}
-    {/block}
+<div class="footerBefore">
+ <div class="container">
+    <div class="row">
+      {block name='hook_footer_before'}
+        {hook h='displayFooterBefore'}
+      {/block}
+    </div>
   </div>
 </div>
+
 <div class="footer-container">
   <div class="container">
     <div class="row">
@@ -42,15 +45,17 @@
       {/block}
     </div>
   </div>
-    <div class="row">
-      <div class="col-md-12 copyright-row">
-        <p class="text-sm-center">
-          {block name='copyright_link'}
-            <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
-              {l s='%copyright% %year% %shop_name%' sprintf=['%shop_name%' => {$shop.name}, '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
-          {/block}
-        </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 copyright-row">
+          <p class="text-sm-center">
+            {block name='copyright_link'}
+              <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
+                {l s='%copyright% %year% %shop_name%' sprintf=['%shop_name%' => {$shop.name}, '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+              </a>
+            {/block}
+          </p>
+        </div>
       </div>
     </div>
 </div>

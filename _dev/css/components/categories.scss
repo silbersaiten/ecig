@@ -624,5 +624,6 @@
 }
 
 #search_filters, .block-categories { 
-  border-top: 5px solid $brand-primary
+  box-shadow: 0 0 20px #efefef;
+  border-radius: 6px;
 }

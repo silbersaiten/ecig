@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="links block_newsletter col-md-3" id="blockEmailSubscription_{$hookName}">
+<div class="links block_newsletter col-md-4" id="blockEmailSubscription_{$hookName}">
     <p class="h3 hidden-sm-down">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
 
     <div class="title clearfix hidden-md-up" data-target="#newsletterblock" data-toggle="collapse">

@@ -9,7 +9,8 @@
 
   a:not([data-depth="0"]) {
     display: block;
-    padding: 0.625rem;
+    padding: 0.625rem 0;
+    margin: 0 0.625rem;
     font-weight: 400;
     color: $gray;
   }
@@ -29,6 +30,8 @@
       #header & {
         color: $brand-primary;
         text-decoration: none;
+        border-bottom: 2px solid $brand-primary;
+
       }
     }
   }

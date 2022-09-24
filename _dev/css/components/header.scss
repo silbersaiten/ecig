@@ -2,18 +2,18 @@ body #header .header-nav {
   a, 
   button i,
   button span {
-    color: white;
+    color: $gray-darker;
   }
 }
 
 #header {
   position: relative;
   z-index: 999;
-  color: $gray;
+
 
   .logo {
-    max-width: 100%;
-    height: auto;
+    height: 85px;
+    width: auto;
   }
 
   #_desktop_logo {
@@ -42,8 +42,7 @@ body #header .header-nav {
   }
 
   .header-nav {
-    max-height: 50px;
-    background-color: $brand-primary;
+    background-color: $gray-light;
 
     #menu-icon {
       margin: 0 1rem;
@@ -154,7 +153,6 @@ body #header .header-nav {
 
   .header-top {
     padding: 1.25rem 0;
-    background-color: $brand-secondary;
 
     > .container {
       position: relative;
@@ -177,8 +175,7 @@ body #header .header-nav {
     }
 
     a[data-depth="0"] {
-      color: $gray;
-      text-transform: uppercase;
+      text-transform: inherit;
     }
 
     .search-widget {
